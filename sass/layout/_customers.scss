@@ -1,0 +1,40 @@
+//  <!------ OUR CUSTOMERS SECTION ------>
+
+.customers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: auto;
+  padding-right: auto;
+}
+
+.customers__item {
+  margin-right: 30px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.customers__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+  }
+}
+
+.customers__icon {
+  fill: currentColor;
+}

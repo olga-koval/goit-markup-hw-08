@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!-- PORTFOLIO HEADER SECTION -->
+    <header class="page-header portfolio-header">
+      <!-- HEADER LOGO -->
+      <div class="container page-header__container">
+        <a class="logo" href="./index.html">
+          <span class="logo--webcolor">Web</span>Studio</a
+        >
+
+        <!-- HEADER MENU NAVIGATION   -->
+
+        <ul class="header-menu list">
+          <li class="header-menu__item">
+            <a href="./index.html" class="header-menu__link link">Студия</a>
+          </li>
+          <li class="header-menu__item">
+            <a href="./portfolio.html" class="header-menu__link link active"
+              >Портфолио</a
+            >
+          </li>
+          <li class="header-menu__item">
+            <a href="" class="header-menu__link link">Контакты</a>
+          </li>
+        </ul>
+
+        <!-- HEADER CONTACTS SECTIONS -->
+
+        <ul class="contacts list">
+          <li class="contacts__item">
+            <a class="contacts__link link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link link" href="tel:+380961111111">
+              <svg class="contacts__icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- MAIN PORTFOLIO PAGE -->
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <!-- PORTFOLIO NAVIGATION -->
+          <ul class="portfolio-nav portfolio-nav--list list">
+            <li class="portfolio-nav__item">
+              <button class="portfolio-nav__button" type="button">Все</button>
+            </li>
+            <li class="portfolio-nav__item">
+              <button class="portfolio-nav__button" type="button">
+                Веб-сайты
+              </button>
+            </li>
+            <li class="portfolio-nav__item">
+              <button class="portfolio-nav__button" type="button">
+                Приложения
+              </button>
+            </li>
+            <li class="portfolio-nav__item">
+              <button class="portfolio-nav__button" type="button">
+                Дизайн
+              </button>
+            </li>
+            <li class="portfolio-nav__item">
+              <button class="portfolio-nav__button" type="button">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+
+          <!-- PORTFOLIO WORKS -->
+
+          <ul class="portfolio-works list">
+            <li class="portfolio-works__item">
+              <div class="portfolio-works__pictures">
+                <img
+                  src="././images/portfolio/1-technokryak.jpg"
+                  alt="Technokryak Website"
+                  width="370"
+                />
+                <p class="portfolio-works--overlay">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Possimus sapiente deleniti nam aliquid fugiat officia debitis,
+                  rem vitae quod tempore.
+                </p>
+              </div>
+              <div class="portfolio-works__description">
+                <h2 class="portfolio-works__title">Технокряк</h2>
+                <p class="portfolio-works__text">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="portfolio-works__item">
+              <div class="portfolio-works__pictures">
+                <img
+                  src="././images/portfolio/2-poster.jpg"
+                  alt="New Orlean vs Golden Star Poster Design"
+                  width="370"
+                />
+                <p class="portfolio-works--overlay">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Possimus sapiente deleniti nam aliquid fugiat officia debitis,
+                  rem vitae quod tempore.
+                </p>
+              </div>
+              <div class="portfolio-works__description">
+                <h2 class="portfolio-works__title">
+                  Постер New Orlean vs Golden Star
+                </h2>
+                <p class="portfolio-works__text">Дизайн</p>
+              </div>
+            </li>
+            <li class="portfolio-works__item">
+              <div class="portfolio-works__pictures">
+                <img
+                  src="././images/portfolio/3-seafoodrest.jpg"
+                  alt="Seafood Restaurant Application"
+                  width="370"
+                />
+                <p class="portfolio-works--overlay">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Possimus sapiente deleniti nam aliquid fugiat officia debitis,
+                  rem vitae quod tempore.
+                </p>
+              </div>
+              <div class="portfolio-works__description">
+                <h2 class="portfolio-works__title">Ресторан Seafood</h2>
+                <p class="portfolio-works__text">Приложение</p>
+              </div>
+            </li>
+            <li class="portfolio-works__item">
+              <div class="portfolio-works__pictures">
+                <img
+                  src="././images/portfolio/4-projectprime.jpg"
+                  alt="Prime Project Marketing"
+                  width="370"
+                />
+                <p class="portfolio-works--overlay">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Possimus sapiente deleniti nam aliquid fugiat officia debitis,
+                  rem vitae quod tempore.
+                </p>
+              </div>
+              <div class="portfolio-works__description">
+                <h2 class="portfolio-works__title">Проект Prime</h2>
+                <p class="portfolio-works__text">Маркетинг</p>
+              </div>
+            </li>
+            <li class="portfolio-works__item">
+              <div class="portfolio-works__pictures">
+                <img
+                  src="././images/portfolio/5-projectboxes.jpg"
+                  alt="Boxes Project Application"
+                  width="370"
+                />
+                <p class="portfolio-works--overlay">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Possimus sapiente deleniti nam aliquid fugiat officia debitis,
+                  rem vitae quod tempore.
+                </p>
+              </div>
+              <div class="portfolio-works__description">
+                <h2 class="portfolio-works__title">Проект Boxes</h2>
+                <p class="portfolio-works__text">Приложение</p>
+              </div>
+            </li>
+            <li class="portfolio-works__item">
+              <div class="portfolio-works__pictures">
+                <img
+                  src="././images/portfolio/6-inspiration.jpg"
+                  alt="Inspiration has no Borders"
+                  width="370"
+                />
+                <p class="portfolio-works--overlay">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Possimus sapiente deleniti nam aliquid fugiat officia debitis,
+                  rem vitae quod tempore.
+                </p>
+              </div>
+              <div class="portfolio-works__description">
+                <h2 class="portfolio-works__title">
+                  Inspiration has no Borders
+                </h2>
+                <p class="portfolio-works__text">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="portfolio-works__item">
+              <div class="portfolio-works__pictures">
+                <img
+                  src="././images/portfolio/7-limitededition.jpg"
+                  alt="Limited Edition Design"
+                  width="370"
+                />
+                <p class="portfolio-works--overlay">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Possimus sapiente deleniti nam aliquid fugiat officia debitis,
+                  rem vitae quod tempore.
+                </p>
+              </div>
+              <div class="portfolio-works__description">
+                <h2 class="portfolio-works__title">Издание Limited Edition</h2>
+                <p class="portfolio-works__text">Дизайн</p>
+              </div>
+            </li>
+            <li class="portfolio-works__item">
+              <div class="portfolio-works__pictures">
+                <img
+                  src="././images/portfolio/8-projectlab.jpg"
+                  alt="LAB Project Marketing"
+                  width="370"
+                />
+                <p class="portfolio-works--overlay">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Possimus sapiente deleniti nam aliquid fugiat officia debitis,
+                  rem vitae quod tempore.
+                </p>
+              </div>
+              <div class="portfolio-works__description">
+                <h2 class="portfolio-works__title">Проект LAB</h2>
+                <p class="portfolio-works__text">Маркетинг</p>
+              </div>
+            </li>
+            <li class="portfolio-works__item">
+              <div class="portfolio-works__pictures">
+                <img
+                  src="././images/portfolio/9-business.jpg"
+                  alt="Growing Business Application"
+                  width="370"
+                />
+                <p class="portfolio-works--overlay">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Possimus sapiente deleniti nam aliquid fugiat officia debitis,
+                  rem vitae quod tempore.
+                </p>
+              </div>
+              <div class="portfolio-works__description">
+                <h2 class="portfolio-works__title">Growing Business</h2>
+                <p class="portfolio-works__text">Приложение</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- PAGE FOOTER SECTION-->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__container">
+          <div class="address">
+            <div class="footer__logo">
+              <a class="logo" href="#"
+                ><span class="logo--webcolor">Web</span
+                ><span class="footer__logo--color">Studio</span></a
+              >
+            </div>
+            <address>
+              <p class="address__item address__item--street">
+                г. Киев, пр-т Леси Украинки, 26
+              </p>
+              <a
+                class="address__item address__item--contacts link"
+                href="mailto:info@example.com"
+                >info@example.com</a
+              >
+              <a
+                class="address__item address__item--contacts link"
+                href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </address>
+          </div>
+
+          <!-- FOOTER JOIN US SECTION -->
+
+          <div>
+            <p class="join-us">Присоединяйтесь</p>
+            <ul class="join-us__list">
+              <li class="join-us__item">
+                <a
+                  class="join-us__link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instragram Icon"
+                >
+                  <svg class="join-us__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join-us__item">
+                <a
+                  class="join-us__link"
+                  href="https://twitter.com/?lang=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Twitter Icon"
+                >
+                  <svg class="join-us__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join-us__item">
+                <a
+                  class="join-us__link"
+                  href="https://twitter.com/?lang=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook Icon"
+                >
+                  <svg class="join-us__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join-us__item">
+                <a
+                  class="join-us__link"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn Icon"
+                >
+                  <svg class="join-us__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- SIGN UP FOOTER -->
+
+          <form action="#" class="sign-up sign-up--form" autocomplete="off">
+            <p class="sign-up__title">Подпишитесь на рассылку</p>
+            <div class="sign-up__field">
+              <input
+                class="sign-up__input"
+                type="email"
+                name="email"
+                placeholder="Email"
+              />
+              <button class="sign-up__button" type="submit">
+                Подписаться
+                <svg class="sign-up__icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-telegram"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

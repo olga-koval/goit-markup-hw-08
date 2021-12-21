@@ -1,0 +1,126 @@
+// <!-- PORTFOLIO HEADER SECTION -->
+
+.portfolio-header {
+  border-bottom: 1px solid #ececec;
+}
+
+// <!-- PORTFOLIO NAVIGATION -->
+
+.portfolio-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-nav--list {
+  margin-bottom: 50px;
+}
+
+.portfolio-nav__item {
+  margin-right: 8px;
+}
+
+.portfolio-nav__button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  background-color: var(--third-bgd-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  padding: 6px 22px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+// <!-- PORTFOLIO WORKS -->
+
+.portfolio-works {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 30px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.portfolio-works__item {
+  margin-right: 30px;
+  cursor: pointer;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:nth-child(-n + 6) {
+    margin-bottom: 30px;
+  }
+  &:nth-child(3n + 3) {
+    margin-right: 0;
+  }
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.portfolio-works__pictures {
+  position: relative;
+  overflow: hidden;
+  &:hover .portfolio-works--overlay {
+    transform: translateY(0);
+  }
+}
+
+.portfolio-works--overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 370px;
+  height: 100%;
+
+  background: rgba(33, 150, 243, 0.9);
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  padding: 63px 24px;
+
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-works__description {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.portfolio-works__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+  margin-bottom: 4px;
+}
+
+.portfolio-works__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
