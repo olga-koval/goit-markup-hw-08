@@ -21,94 +21,92 @@
   <body>
     <!-- HEADER SECTION -->
     <header class="page-header">
-    <!-- HEADER LOGO -->
-    <div class="container page-header__container">
+      <!-- HEADER LOGO -->
+      <div class="container page-header__container">
         <a class="logo" href="./index.html">
           <span class="logo--webcolor">Web</span>Studio</a
         >
 
-<!--------- HEADER MOBILE MENU ---------->
-        <div>
-          <button class="menu-button is-open" type="button" aria-expanded="false" data-menu-button>
+        <!-- HEADER MOBILE MENU -->
+        <div class="mobile-menu">
+          <button
+            type="button"
+            class="menu-button is-open"
+            aria-expanded="false"
+            data-menu-button
+          >
             <svg width="40" height="40" aria-label="Mobile menu switcher">
-              <use class="icon-menu-close" href="./images/icons.svg#icon-menu-close"></use>
+              <use
+                class="icon-cross"
+                href="./images/icons.svg#icon-menu-close"
+              ></use>
               <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
             </svg>
           </button>
-        </div>
-        <div class="mobile-menu">
-          <ul class="mobile-menu__nav">
-            <li class="mobile-menu__nav-item">
+          <div class="visually-hidden">
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__nav-item">
                 <a href="./index.html" class="mobile-menu__nav-link link"
                   >Студия</a
                 >
               </li>
-            <li class="mobile-menu__nav-item">
+              <li class="mobile-menu__nav-item">
                 <a href="./portfolio.html" class="mobile-menu__nav-link link"
                   >Портфолио</a
                 >
-                </li>
-            <li class="mobile-menu__nav-item">
+              </li>
+              <li class="mobile-menu__nav-item">
                 <a href="" class="mobile-menu__nav-link link">Контакты</a>
               </li>
-          </ul>
-          <ul class="mobile-menu__contacts">
-            <li class="mobile-menu__contacts-item">
-              <a class="link" href="mailto:info@devstudio.com">
-                info@devstudio.com</a
-              >
-            </li>
-            <li class="mobile-menu__contacts-item">
-              <a class="link" href="tel:+380961111111">
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-          <ul class="mobile-menu__social">
-            <li class="mobile-menu__social-item">
-              <a href="#" class="mobile-menu__social-link link"
-                >Instagram</a
-              >
-            </li>
-            <li class="mobile-menu__social-item">
-              <a href="#" class="mobile-menu__social-link link"
-                >Twitter</a
-              >
-            </li>
-            <li class="mobile-menu__social-item">
-              <a href="#" class="mobile-menu__social-link link"
-                >Facebook</a
-              >
-            </li>
-            <li class="mobile-menu__social-item">
-              <a href="#" class="mobile-menu__social-link link"
-                >LinkedIn</a
-              >
-            </li>
-          </ul>
-        <div>
+            </ul>
+            <ul class="mobile-menu__contacts">
+              <li class="mobile-menu__contacts-item">
+                <a class="link" href="mailto:info@devstudio.com">
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="mobile-menu__contacts-item">
+                <a class="link" href="tel:+380961111111"> +38 096 111 11 11</a>
+              </li>
+            </ul>
+            <ul class="mobile-menu__social">
+              <li class="mobile-menu__social-item">
+                <a href="#" class="mobile-menu__social-link link">Instagram</a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a href="#" class="mobile-menu__social-link link">Twitter</a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a href="#" class="mobile-menu__social-link link">Facebook</a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a href="#" class="mobile-menu__social-link link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-<!-- /* ------ HEADER NAVIGATION SECTION ------ */ -->
+        <!-- HEADER NAVIGATION SECTION -->
 
-          <ul class="header-menu list">
-            <li class="header-menu__item">
-              <a href="./index.html" class="header-menu__link link active"
-                >Студия</a
-              >
-            </li>
-            <li class="header-menu__item">
-              <a href="./portfolio.html" class="header-menu__link link"
-                >Портфолио</a
-              >
-            </li>
-            <li class="header-menu__item">
-              <a href="" class="header-menu__link link">Контакты</a>
-            </li>
-          </ul>
+        <ul class="header-menu list">
+          <li class="header-menu__item">
+            <a href="./index.html" class="header-menu__link link active"
+              >Студия</a
+            >
+          </li>
+          <li class="header-menu__item">
+            <a href="./portfolio.html" class="header-menu__link link"
+              >Портфолио</a
+            >
+          </li>
+          <li class="header-menu__item">
+            <a href="" class="header-menu__link link">Контакты</a>
+          </li>
+        </ul>
 
-<!-- /* ------ HEADER CONTACTS SECTION ------ */ -->
+        <!-- HEADER CONTACTS SECTION -->
 
-          <ul class="contacts list">
+        <ul class="contacts list">
           <li class="contacts__item">
             <a class="contacts__link link" href="mailto:info@devstudio.com">
               <svg class="contacts__icon" width="16" height="12">
@@ -126,7 +124,7 @@
             >
           </li>
         </ul>
-     </div>
+      </div>
     </header>
 
     <!-- MAIN WEBPAGE CONTENT -->
@@ -134,16 +132,16 @@
     <main>
       <!-- HERO SECTION -->
 
-      <!-- <section class="hero">
+      <section class="hero">
         <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
         <button class="hero__button" type="button" data-modal-open>
           Заказать услугу
         </button>
-      </section> -->
+      </section>
 
       <!-- BENEFITS SECTION -->
 
-      <!-- <section class="section">
+      <section class="section">
         <h2 class="visually-hidden">Наши сильные стороны</h2>
         <div class="container">
           <ul class="benefits list">
@@ -197,19 +195,19 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- SERVICES SECTION-->
 
-      <!-- <section>
+      <section>
         <div class="container">
           <h2 class="services-title">Чем мы занимаемся</h2>
           <ul class="services list">
             <li class="services__picture">
               <img
                 srcset="
-                    ././images/ourservices/services-1.jpg 1x,
-                    ././images/ourservices/services-1-2x.jpg 2x
+                  ././images/ourservices/services-1.jpg    1x,
+                  ././images/ourservices/services-1-2x.jpg 2x
                 "
                 src="././images/ourservices/services-1.jpg"
                 alt="Картинка 1"
@@ -220,9 +218,9 @@
             </li>
             <li class="services__picture">
               <img
-              srcset="
-                    ././images/ourservices/services-2.jpg 1x,
-                    ././images/ourservices/services-2-2x.jpg 2x
+                srcset="
+                  ././images/ourservices/services-2.jpg    1x,
+                  ././images/ourservices/services-2-2x.jpg 2x
                 "
                 src="././images/ourservices/services-2.jpg"
                 alt="Картинка 2"
@@ -233,9 +231,9 @@
             </li>
             <li class="services__picture">
               <img
-              srcset="
-                    ././images/ourservices/services-3.jpg 1x,
-                    ././images/ourservices/services-3-2x.jpg 2x
+                srcset="
+                  ././images/ourservices/services-3.jpg    1x,
+                  ././images/ourservices/services-3-2x.jpg 2x
                 "
                 src="././images/ourservices/services-3.jpg"
                 alt="Картинка 3"
@@ -246,11 +244,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- TEAM SECTION -->
 
-      <!-- <section class="section team-section">
+      <section class="section team-section">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team list">
@@ -258,36 +256,36 @@
               <div>
                 <picture>
                   <source
-                  srcset="
+                    srcset="
                       ././images/ourteam/ourteam-1.jpg    1x,
                       ././images/ourteam/ourteam-1-2x.jpg 2x
-                  "
-                  media="(min-width:1200px)"
+                    "
+                    media="(min-width:1200px)"
                   />
                   <source
-                  srcset="
+                    srcset="
                       ././images/ourteam/ourteam-1-tab.jpg    1x,
                       ././images/ourteam/ourteam-1-tab-2x.jpg 2x
-                  "
-                  media="(min-width:768px)"
+                    "
+                    media="(min-width:768px)"
                   />
                   <source
-                  srcset="
+                    srcset="
                       ././images/ourteam/ourteam-1-mob.jpg    1x,
                       ././images/ourteam/ourteam-1-mob-2x.jpg 2x
-                  "
-                  media="(min-width:320px)"
+                    "
+                    media="(min-width:320px)"
                   />
-                <img
-                  src="././images/ourteam/ourteam-1.jpg"
-                  alt="Игорь Демьяненко"
-                />
+                  <img
+                    src="././images/ourteam/ourteam-1.jpg"
+                    alt="Игорь Демьяненко"
+                  />
                 </picture>
                 <div class="team__description">
                   <h3 class="team__name">Игорь Демьяненко</h3>
-                  <p class="team__profession">Product Designer</p> -->
-                  <!-- SOCIAL ICONS -->
-                  <!-- <ul class="social">
+                  <p class="team__profession">Product Designer</p>
+                  SOCIAL ICONS
+                  <ul class="social">
                     <li class="social__item">
                       <a
                         class="social__link"
@@ -343,42 +341,41 @@
                   </ul>
                 </div>
               </div>
-            </li> -->
-            <!-- <li class="team__item">
+            </li>
+            <li class="team__item">
               <div>
                 <picture>
                   <source
-                  srcset="
+                    srcset="
                       ././images/ourteam/ourteam-2.jpg    1x,
                       ././images/ourteam/ourteam-2-2x.jpg 2x
-                  "
-                  media="(min-width:1200px)"
+                    "
+                    media="(min-width:1200px)"
                   />
                   <source
-                  srcset="
+                    srcset="
                       ././images/ourteam/ourteam-2-tab.jpg    1x,
                       ././images/ourteam/ourteam-2-tab-2x.jpg 2x
-                  "
-                  media="(min-width:768px)"
+                    "
+                    media="(min-width:768px)"
                   />
                   <source
-                  srcset="
+                    srcset="
                       ././images/ourteam/ourteam-2-mob.jpg    1x,
                       ././images/ourteam/ourteam-2-mob-2x.jpg 2x
-                  "
-                  media="(min-width:320px)"
+                    "
+                    media="(min-width:320px)"
                   />
-                <img
-                  src="././images/ourteam/ourteam-2.jpg"
-                  alt="Ольга Репина"
-                 
-                />
+                  <img
+                    src="././images/ourteam/ourteam-2.jpg"
+                    alt="Ольга Репина"
+                  />
                 </picture>
                 <div class="team__description">
                   <h3 class="team__name">Ольга Репина</h3>
-                  <p class="team__profession">Frontend Developer</p> -->
-                  <!-- SOCIAL ICONS -->
-                  <!-- <ul class="social">
+                  <p class="team__profession">Frontend Developer</p>
+                  SOCIAL ICONS
+                  <ul class="social">
                     <li class="social__item">
                       <a
                         class="social__link"
@@ -434,31 +431,31 @@
                   </ul>
                 </div>
               </div>
-            </li> -->
-            <!-- <li class="team__item">
+            </li>
+            <li class="team__item">
               <div>
                 <picture>
-                   <source
-                      srcset="
-                          ././images/ourteam/ourteam-3.jpg    1x,
-                          ././images/ourteam/ourteam-3-2x.jpg 2x
-                      "
-                      media="(min-width:1200px)"
-                    />
-                    <source
-                      srcset="
-                          ././images/ourteam/ourteam-3-tab.jpg    1x,
-                          ././images/ourteam/ourteam-3-tab-2x.jpg 2x
-                      "
-                      media="(min-width:768px)"
-                    />
-                    <source
-                      srcset="
-                          ././images/ourteam/ourteam-3-mob.jpg    1x,
-                          ././images/ourteam/ourteam-3-mob-2x.jpg 2x
-                      "
-                      media="(min-width:320px)"
-                    />
+                  <source
+                    srcset="
+                      ././images/ourteam/ourteam-3.jpg    1x,
+                      ././images/ourteam/ourteam-3-2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ././images/ourteam/ourteam-3-tab.jpg    1x,
+                      ././images/ourteam/ourteam-3-tab-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ././images/ourteam/ourteam-3-mob.jpg    1x,
+                      ././images/ourteam/ourteam-3-mob-2x.jpg 2x
+                    "
+                    media="(min-width:320px)"
+                  />
                   <img
                     src="././images/ourteam/ourteam-3.jpg"
                     alt="Николай Тарасов"
@@ -466,9 +463,9 @@
                 </picture>
                 <div class="team__description">
                   <h3 class="team__name">Николай Тарасов</h3>
-                  <p class="team__profession">Marketing</p> -->
-                  <!-- SOCIAL ICONS -->
-                  <!-- <ul class="social">
+                  <p class="team__profession">Marketing</p>
+                  SOCIAL ICONS
+                  <ul class="social">
                     <li class="social__item">
                       <a
                         class="social__link"
@@ -524,41 +521,41 @@
                   </ul>
                 </div>
               </div>
-            </li> -->
-            <!-- <li class="team__item">
+            </li>
+            <li class="team__item">
               <div>
                 <picture>
-                    <source
-                        srcset="
-                            ././images/ourteam/ourteam-4.jpg    1x,
-                            ././images/ourteam/ourteam-4-2x.jpg 2x
-                        "
-                        media="(min-width:1200px)"
-                    />
-                    <source
-                        srcset="
-                            ././images/ourteam/ourteam-4-tab.jpg    1x,
-                            ././images/ourteam/ourteam-4-tab-2x.jpg 2x
-                        "
-                        media="(min-width:768px)"
-                    />
-                    <source
-                        srcset="
-                            ././images/ourteam/ourteam-4-mob.jpg    1x,
-                            ././images/ourteam/ourteam-4-mob-2x.jpg 2x
-                        "
-                        media="(min-width:320px)"
-                    />
-                    <img
-                      src="././images/ourteam/ourteam-4.jpg"
-                      alt="Михаил Ермаков"
-                    />
+                  <source
+                    srcset="
+                      ././images/ourteam/ourteam-4.jpg    1x,
+                      ././images/ourteam/ourteam-4-2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ././images/ourteam/ourteam-4-tab.jpg    1x,
+                      ././images/ourteam/ourteam-4-tab-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ././images/ourteam/ourteam-4-mob.jpg    1x,
+                      ././images/ourteam/ourteam-4-mob-2x.jpg 2x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    src="././images/ourteam/ourteam-4.jpg"
+                    alt="Михаил Ермаков"
+                  />
                 </picture>
                 <div class="team__description">
                   <h3 class="team__name">Михаил Ермаков</h3>
-                  <p class="team__profession">UI Designer</p> -->
-                  <!-- SOCIAL ICONS -->
-                  <!-- <ul class="social">
+                  <p class="team__profession">UI Designer</p>
+                  SOCIAL ICONS
+                  <ul class="social">
                     <li class="social__item">
                       <a
                         class="social__link"
@@ -617,11 +614,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- CUSTOMERS SECTION -->
 
-      <!-- <section class="section">
+      <section class="section">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
           <ul class="customers">
@@ -706,7 +703,7 @@
           </ul>
         </div>
       </section>
-    </main> -->
+    </main>
 
     <!-- PAGE FOOTER SECTION-->
 
@@ -737,9 +734,9 @@
             </address>
           </div> -->
 
-          <!-- FOOTER JOIN US SECTION -->
+    <!-- FOOTER JOIN US SECTION -->
 
-          <!-- <div>
+    <!-- <div>
             <p class="join-us">Присоединяйтесь</p>
             <ul class="join-us__list">
               <li class="join-us__item">
@@ -797,9 +794,9 @@
             </ul>
           </div> -->
 
-          <!-- SIGN UP FOOTER -->
+    <!-- SIGN UP FOOTER -->
 
-          <!-- <form action="#" class="sign-up sign-up--form" autocomplete="off">
+    <!-- <form action="#" class="sign-up sign-up--form" autocomplete="off">
             <p class="sign-up__title">Подпишитесь на рассылку</p>
             <div class="sign-up__field">
               <input
@@ -901,6 +898,5 @@
 
     <!-- MODAL MOBILE MENU JS FILE -->
     <script src="./js/mobile-menu.js"></script>
-
   </body>
 </html>

@@ -2,17 +2,18 @@
 
 .menu-button {
   display: inline-flex;
-  margin: 0;
+  // margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
+  margin-left: auto;
 }
 
-.menu-button .icon-menu-close {
+.menu-button .icon-cross {
   display: none;
 }
 
-.menu-button.is-open .icon-menu-close {
+.menu-button.is-open .icon-cross {
   display: block;
 }
 
