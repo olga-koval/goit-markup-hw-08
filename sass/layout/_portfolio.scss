@@ -9,14 +9,24 @@
 .portfolio-nav {
   display: flex;
   justify-content: center;
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
 }
 
 .portfolio-nav--list {
   margin-bottom: 50px;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 35px;
+  }
 }
 
 .portfolio-nav__item {
   margin-right: 8px;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 15px;
+  }
 }
 
 .portfolio-nav__button {
@@ -50,27 +60,31 @@
 // <!-- PORTFOLIO WORKS -->
 
 .portfolio-works {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: 30px;
-  &:last-child {
-    margin-right: 0;
+  margin: -15px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
 .portfolio-works__item {
-  margin-right: 30px;
   cursor: pointer;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:nth-child(-n + 6) {
-    margin-bottom: 30px;
-  }
-  &:nth-child(3n + 3) {
-    margin-right: 0;
-  }
   &:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  margin: 15px;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 4 * 15px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 6 * 15px) / 3);
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &:first-child .portfolio-works__description {
+      padding: 20px 24px 56px 24px;
+    }
   }
 }
 
@@ -86,8 +100,9 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 370px;
+  width: 100%;
   height: 100%;
+  margin-top: 1px;
 
   background: rgba(33, 150, 243, 0.9);
   font-size: 18px;
