@@ -48,6 +48,16 @@ img {
   margin: -1px;
 }
 
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #ffffff;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-bgd-color: #ffffff;
+  --secondary-bgd-color: #2f303a;
+  --third-bgd-color: #f5f4fa;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -144,6 +154,7 @@ body {
 }
 
 .page-header__container {
+  position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -289,6 +300,105 @@ body {
 
 .contacts__icon {
   margin-right: 10px;
+}
+
+.mobile-menu {
+  margin-left: auto;
+}
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  outline: 1px solid red;
+}
+
+.menu-container.is-open {
+  display: block;
+}
+
+.mobile-menu__nav-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu__nav-item:last-child {
+  margin-bottom: 302px;
+}
+
+.mobile-menu__nav-link {
+  max-width: 219px;
+  max-height: 48px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
+.mobile-menu__contacts-item:first-child {
+  margin-bottom: 32px;
+}
+
+.mobile-menu__contacts-item:last-child {
+  margin-bottom: 64px;
+}
+
+.mobile-menu__contacts-phone {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.mobile-menu__contacts-email {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17px;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.mobile-menu__social {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.mobile-menu__social-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2px;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
 }
 
 /* HERO SECTION */
