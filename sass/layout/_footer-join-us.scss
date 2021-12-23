@@ -8,15 +8,20 @@
   text-transform: uppercase;
   color: var(--secondary-text-color);
   margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 
 .join-us__list {
-  // display: flex;
-  // justify-content: flex-start;
-  @media screen and (max-width: 768px) {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    justify-content: start;
   }
 }
 

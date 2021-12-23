@@ -7,14 +7,13 @@
 }
 
 .sign-up--form {
-  margin-left: 93px;
-  @media screen and (max-width: 768px) {
-    margin: 0;
+  margin: 0;
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
   }
 }
 
 .sign-up__title {
-  // width: 219px;
   width: 100%;
   height: 16px;
   font-weight: 700;
@@ -24,18 +23,25 @@
   text-transform: uppercase;
   color: var(--secondary-text-color);
   margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 219px;
+  }
 }
 
 .sign-up__field {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  @media screen and (max-width: 768px) {
-    display: block;
+  display: block;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: flex-start;
   }
 }
 
 .sign-up__input {
+  max-width: 450px;
   width: 100%;
   height: 50px;
   font-size: 16px;
@@ -47,11 +53,13 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding-left: 16px;
+  margin-bottom: 20px;
   &:focus-within {
     border: 1px solid var(--third-bgd-color);
   }
-  @media screen and (max-width: 768px) {
-    margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    max-width: 358px;
   }
 }
 
@@ -71,14 +79,14 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  margin-left: 12px;
+  margin: 0 auto;
   &:hover,
   &:focus,
   &:active {
     box-shadow: inset 0 0 5px 2px rgba(0, 0, 0, 0.3);
   }
-  @media screen and (max-width: 768px) {
-    margin: 0 auto;
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
   }
 }
 

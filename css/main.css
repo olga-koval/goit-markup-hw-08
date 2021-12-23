@@ -869,12 +869,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   background-color: var(--third-bgd-color);
-}
-
-@media screen and (max-width: 1199px) {
-  .team {
-    margin: -15px;
-  }
+  margin: -15px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1033,11 +1028,25 @@ body {
   padding-bottom: 60px;
 }
 
-@media screen and (max-width: 768px) {
+.footer__container {
+  display: block;
+  text-align: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
   .footer__container {
-    display: block;
-    text-align: center;
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
   }
 }
 
@@ -1050,13 +1059,23 @@ body {
 }
 
 .address {
-  margin-right: 70px;
+  margin-right: 0px;
+  margin-bottom: 60px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .address {
-    margin-right: 0px;
-    margin-bottom: 60px;
+    text-align: center;
+    margin-right: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .address {
+    flex-shrink: 0;
+    text-align: start;
+    margin-right: 70px;
+    margin-bottom: 0;
   }
 }
 
@@ -1096,11 +1115,27 @@ body {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
+  .join-us {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .join-us {
+    text-align: start;
+  }
+}
+
+.join-us__list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
   .join-us__list {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 60px;
+    justify-content: start;
   }
 }
 
@@ -1142,12 +1177,12 @@ body {
 }
 
 .sign-up--form {
-  margin-left: 93px;
+  margin: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1200px) {
   .sign-up--form {
-    margin: 0;
+    margin-left: 93px;
   }
 }
 
@@ -1163,19 +1198,32 @@ body {
   margin-bottom: 20px;
 }
 
-.sign-up__field {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+@media screen and (min-width: 768px) {
+  .sign-up__title {
+    text-align: center;
+  }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1200px) {
+  .sign-up__title {
+    max-width: 219px;
+  }
+}
+
+.sign-up__field {
+  display: block;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
   .sign-up__field {
-    display: block;
+    display: flex;
+    align-items: flex-start;
   }
 }
 
 .sign-up__input {
+  max-width: 450px;
   width: 100%;
   height: 50px;
   font-size: 16px;
@@ -1187,15 +1235,17 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding-left: 16px;
+  margin-bottom: 20px;
 }
 
 .sign-up__input:focus-within {
   border: 1px solid var(--third-bgd-color);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1200px) {
   .sign-up__input {
-    margin-bottom: 20px;
+    margin-bottom: 0;
+    max-width: 358px;
   }
 }
 
@@ -1215,16 +1265,16 @@ body {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  margin-left: 12px;
+  margin: 0 auto;
 }
 
 .sign-up__button:hover, .sign-up__button:focus, .sign-up__button:active {
   box-shadow: inset 0 0 5px 2px rgba(0, 0, 0, 0.3);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1200px) {
   .sign-up__button {
-    margin: 0 auto;
+    margin-left: 12px;
   }
 }
 

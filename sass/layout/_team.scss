@@ -8,9 +8,7 @@
   display: flex;
   flex-wrap: wrap;
   background-color: var(--third-bgd-color);
-  @media screen and (max-width: 1199px) {
-    margin: -15px;
-  }
+  margin: -15px;
   @media screen and (min-width: 1200px) {
     margin: -30px;
   }

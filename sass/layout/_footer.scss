@@ -7,13 +7,18 @@
 }
 
 .footer__container {
-  // display: flex;
-  // justify-content: flex-start;
-  // align-items: flex-start;
-  @media screen and (max-width: 768px) {
-    display: block;
-    text-align: center;
-    align-items: center;
+  display: block;
+  text-align: center;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
   }
 }
 
@@ -26,10 +31,17 @@
 }
 
 .address {
-  margin-right: 70px;
-  @media screen and (max-width: 768px) {
-    margin-right: 0px;
-    margin-bottom: 60px;
+  margin-right: 0px;
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    text-align: center;
+    margin-right: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-shrink: 0;
+    text-align: start;
+    margin-right: 70px;
+    margin-bottom: 0;
   }
 }
 
