@@ -44,7 +44,6 @@
   background-color: #ffffff;
   padding: 48px 83px 48px 40px;
   &.is-open {
-    // display: block;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -54,10 +53,6 @@
 .mobile-menu__nav-item:not(:last-child) {
   margin-bottom: 32px;
 }
-
-// .mobile-menu__nav-item:last-child {
-//   margin-bottom: 302px;
-// }
 
 .mobile-menu__nav-link {
   max-width: 219px;
