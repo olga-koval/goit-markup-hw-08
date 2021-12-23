@@ -333,9 +333,7 @@ body {
   left: 0;
   width: 100%;
   background-color: #ffffff;
-  padding-top: 48px;
-  padding-bottom: 48px;
-  padding-left: 40px;
+  padding: 48px 83px 48px 40px;
   outline: 1px solid red;
 }
 
@@ -391,6 +389,14 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+.mobile-menu__social-item:not(:last-child):after {
+  content: "";
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .mobile-menu__social-link {
