@@ -306,12 +306,24 @@ body {
   margin-left: auto;
 }
 
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
 .menu-button {
   display: inline-flex;
   margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
+}
+
+.menu-button:hover,
+.menu-button :focus,
+.menu-button :active {
+  fill: var(--accent-color);
 }
 
 .menu-button .icon-cross {
@@ -334,7 +346,6 @@ body {
   width: 100%;
   background-color: #ffffff;
   padding: 48px 83px 48px 40px;
-  outline: 1px solid red;
 }
 
 .menu-container.is-open {
@@ -359,6 +370,13 @@ body {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+}
+
+.mobile-menu__nav-link:hover,
+.mobile-menu__nav-link :focus,
+.mobile-menu__nav-link :active {
+  cursor: pointer;
+  color: var(--accent-color);
 }
 
 .mobile-menu__contacts-item:first-child {

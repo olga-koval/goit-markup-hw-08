@@ -1,6 +1,13 @@
 // <!--------- HEADER MENU BUTTON -------- -->
 .mobile-menu {
   margin-left: auto;
+  // &:hover {
+  //   cursor: pointer;
+  //   color: var(--accent-color);
+  // }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .menu-button {
@@ -9,6 +16,11 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  &:hover,
+  :focus,
+  :active {
+    fill: var(--accent-color);
+  }
 }
 
 .menu-button .icon-cross {
@@ -34,8 +46,15 @@
   padding: 48px 83px 48px 40px;
   &.is-open {
     display: block;
-  
+  }
 }
+
+// .icon-cross,
+// .icon-menu:hover,
+// :focus,
+// :active {
+//   fill: var(--accent-color);
+// }
 
 .mobile-menu__nav-item:not(:last-child) {
   margin-bottom: 32px;
@@ -55,6 +74,12 @@
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+  &:hover,
+  :focus,
+  :active {
+    cursor: pointer;
+    color: var(--accent-color);
+  }
 }
 
 .mobile-menu__contacts-item:first-child {
