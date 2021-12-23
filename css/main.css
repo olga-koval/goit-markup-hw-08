@@ -884,7 +884,6 @@ body {
 }
 
 .team__item {
-  width: 270px;
   margin: 15px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -1034,10 +1033,12 @@ body {
   padding-bottom: 60px;
 }
 
-.footer__container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+@media screen and (max-width: 768px) {
+  .footer__container {
+    display: block;
+    text-align: center;
+    align-items: center;
+  }
 }
 
 .footer__logo {
@@ -1050,6 +1051,13 @@ body {
 
 .address {
   margin-right: 70px;
+}
+
+@media screen and (max-width: 768px) {
+  .address {
+    margin-right: 0px;
+    margin-bottom: 60px;
+  }
 }
 
 .address__item {
@@ -1088,9 +1096,12 @@ body {
   margin-bottom: 20px;
 }
 
-.join-us__list {
-  display: flex;
-  justify-content: flex-start;
+@media screen and (max-width: 768px) {
+  .join-us__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
 }
 
 .join-us__item {
@@ -1126,16 +1137,22 @@ body {
 
 .sign-up {
   display: block;
-  width: 570px;
-  height: 86px;
+  width: 100%;
+  height: 100%;
 }
 
 .sign-up--form {
   margin-left: 93px;
 }
 
+@media screen and (max-width: 768px) {
+  .sign-up--form {
+    margin: 0;
+  }
+}
+
 .sign-up__title {
-  width: 219px;
+  width: 100%;
   height: 16px;
   font-weight: 700;
   font-size: 14px;
@@ -1152,8 +1169,14 @@ body {
   align-items: flex-start;
 }
 
+@media screen and (max-width: 768px) {
+  .sign-up__field {
+    display: block;
+  }
+}
+
 .sign-up__input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   font-size: 16px;
   line-height: 1.25;
@@ -1168,6 +1191,12 @@ body {
 
 .sign-up__input:focus-within {
   border: 1px solid var(--third-bgd-color);
+}
+
+@media screen and (max-width: 768px) {
+  .sign-up__input {
+    margin-bottom: 20px;
+  }
 }
 
 .sign-up__button {
@@ -1191,6 +1220,12 @@ body {
 
 .sign-up__button:hover, .sign-up__button:focus, .sign-up__button:active {
   box-shadow: inset 0 0 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 768px) {
+  .sign-up__button {
+    margin: 0 auto;
+  }
 }
 
 .sign-up__icon {

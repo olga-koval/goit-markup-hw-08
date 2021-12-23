@@ -11,8 +11,13 @@
 }
 
 .join-us__list {
-  display: flex;
-  justify-content: flex-start;
+  // display: flex;
+  // justify-content: flex-start;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
 }
 
 .join-us__item {
