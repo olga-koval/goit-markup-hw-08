@@ -647,6 +647,12 @@ body {
   margin-bottom: 12px;
 }
 
+@media screen and (max-width: 400px) {
+  .modal__header {
+    font-size: 14px;
+  }
+}
+
 .modal-form__label {
   display: block;
   font-size: 12px;
@@ -733,6 +739,12 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 400px) {
+  .modal-form__checkbox {
+    font-size: 10px;
+  }
 }
 
 .modal-form__checkbox-icon {
