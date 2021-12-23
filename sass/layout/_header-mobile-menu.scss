@@ -11,6 +11,8 @@
 }
 
 .menu-button {
+  position: relative;
+  z-index: 1;
   display: inline-flex;
   margin: 0;
   padding: 0;
@@ -38,23 +40,17 @@
 .menu-container {
   display: none;
 
-  position: absolute;
-  top: 100%;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
   left: 0;
-  width: 100%;
   background-color: #ffffff;
   padding: 48px 83px 48px 40px;
   &.is-open {
     display: block;
   }
 }
-
-// .icon-cross,
-// .icon-menu:hover,
-// :focus,
-// :active {
-//   fill: var(--accent-color);
-// }
 
 .mobile-menu__nav-item:not(:last-child) {
   margin-bottom: 32px;
